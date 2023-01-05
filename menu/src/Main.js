@@ -4,7 +4,7 @@ import Categories from './Categories';
 import items from './Data';
 const allCategories = ['all', ...new Set(items.map(item => item.category))];
 
-function App() {
+function Main() {
   const [menuItems, setMenuItems] = useState(items);
   const [categories] = useState(allCategories);
 
@@ -32,4 +32,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
